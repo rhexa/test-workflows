@@ -7,11 +7,11 @@ jobs:
     name: test workflow
     runs-on: ubuntu-latest
     steps:
-      - name: List current directory before checkout
-        run: ls -lah
+      - name: tree current directory before checkout
+        run: tree
       - name: Checkout Code
         uses: actions/checkout@v3
         with:
           fetch-depth: 0
-      - name: List current directory after checkout
-        run: ls -lah
+      - name: tree current directory after checkout
+        run: tree
