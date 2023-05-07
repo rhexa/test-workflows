@@ -8,10 +8,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: tree current directory before checkout
-        run: tree -a -l3
+        run: tree -a -L 3
       - name: Checkout Code
         uses: actions/checkout@v3
         with:
           fetch-depth: 0
       - name: tree current directory after checkout
-        run: tree -a -l3
+        run: tree -a -L 3
