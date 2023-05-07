@@ -15,3 +15,6 @@ jobs:
           fetch-depth: 0
       - name: tree current directory after checkout
         run: tree -a -L 3
+      - name: annotate warning
+        run: |
+          echo "::warning file=app.js,line=1,col=5,endColumn=7::Missing semicolon"
