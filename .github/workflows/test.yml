@@ -1,0 +1,11 @@
+name: test
+on:
+  push:
+  
+jobs:
+  test:
+    name: test workflow
+    runs-on: ubuntu-latest
+    steps:
+      - name: test workflow
+        run: ls -lah
