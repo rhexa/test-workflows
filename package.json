@@ -1,0 +1,8 @@
+{
+  "name": "example-project",
+  "version": "1.0.0",
+  "description": "An example project with a vulnerable dependency",
+  "dependencies": {
+    "underscore": "1.13.1"
+  }
+}
